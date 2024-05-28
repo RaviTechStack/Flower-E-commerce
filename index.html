@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  @media (max-width : 768px){
+    .img-container{
+    height: 60%;
+    width: 100%;
+  }
+  .img-info{
+    height: 40%;
+    width: 100%;
+  }
+  }
+  
+</style>
+
+<body class="font-normalText overflow-x-hidden">
+  <header class="relative bg-hero-pattern h-[80vh] md:h-screen w-full bg-no-repeat bg-center bg-cover">
+    <div class="bg-black h-full w-full absolute top-0 right-0 opacity-60"></div>
+    <main class="relative h-full font-normalText">
+      <nav class="flex justify-between px-6 md:px-0 md:justify-around items-center md:py-6 py-5 md:shadow-sm shadow-white">
+        <h1 class="md:text-3xl text-2xl text-white font-bold font-funky">Logo</h1>
+        <ul class="hidden md:flex gap-10">
+          <a href="" class="text-white text-lg">Home</a>
+          <a href="" class="text-white text-lg">About</a>
+          <a href="" class="text-white text-lg">Shop</a>
+          <a href="" class="text-white text-lg">Contact</a>
+        </ul>
+
+        <a href="./cart.html"><button class="hidden md:block px-4 py-1 border border-white text-white rounded-lg font-bold">
+          Cart
+        </button></a>
+        <div id="menuBtn" class="block md:hidden z-10"><i class="fa-solid fa-bars text-2xl text-orange-600"></i></div>
+      </nav>
+      <div class="md:mt-[7.2rem] mt-8  grid place-items-center">
+        <p class=" md:text-sm text-xs font-bold text-white text-center font-normalText">WELCOME TO FLORIST</p>
+        <h1 class="md:text-7xl text-[2.5rem] md:w-[55%] w-full px-5 font-bold text-center text-white leading-[1] md:leading-tight md:font-semibold font-funky mt-4 mx-auto">
+          Let's Make Beautiful Flowers a Part of Your Life.
+        </h1>
+        <p class=" text-white text-base text-center mt-4 md:w-[50%] w-[95%] font-normalText">Explore a vibrant tapestry of blooms
+          and arrangements that add color, fragrance, and elegance to your life. Discover the perfect floral expression
+          for every moment and occasion.</p>
+        <button class="text-lg px-7 md:py-3 py-2 bg-orange-500 text-white  mt-6 rounded-lg">Shop Now</button>
+      </div>
+    </main>
+    <div id="BlackOverlay" class="hidden transition-all bg-black h-[80vh] w-full absolute top-0 right-0 opacity-60"></div>
+    <div id="mobile-menu" class="md:hidden absolute h-[80vh] bg-white w-1/2 top-0 left-0 flex flex-col gap-5 pl-6 justify-between transition-all py-8 -translate-x-full">
+      <h1 class="text-center text-gray-500 text-2xl font-funky font-bold ">Logo</h1>
+      <ul class="flex flex-col gap-3">
+        <li class="text-xl text-gray-400 font-semibold">Home</li><hr />
+        <li class="text-xl text-gray-400 font-semibold">About</li><hr>
+        <li class="text-xl text-gray-400 font-semibold">Shop</li><hr>
+        <li class="text-xl text-gray-400 font-semibold">Contact</li><hr>
+      </ul>
+      <a href="./cart.html"><button class="w-4/5 px-2 py-1 text-lg bg-orange-500 text-white rounded-lg">View Cart</button></a>
+    </div>
+  </header>
+
+  <!-- FEATURES SECTION  -->
+  <section class="flex justify-center w-full h-fit py-14 font-normalText bg-orange-50">
+    <div id="container" class="md:w-4/5 w-[90%] flex md:gap-3 gap-10 flex-col md:flex-row">
+      <div class="md:px-7 px-3 border-2 border-l-orange-600 md:py-3 py-1">
+        <p class="md:my-2 my-1 text-orange-500 text-sm md:text-base">01</p>
+        <h2 class="my-1 text-lg md:text-2xl font-bold font-funky">Order Online</h2>
+        <p class="text-gray-700 text-sm md:text-base">Share some details here. This is Flexible section where you can share anything you
+          want.</p>
+      </div>
+      <div class="md:px-7 px-3 border-2 border-l-orange-600 md:py-3 py-1">
+        <p class="md:my-2 my-1 text-orange-500 text-sm md:text-base">02</p>
+        <h2 class="my-1 text-lg md:text-2xl font-bold font-funky">Free Shipping</h2>
+        <p class="text-gray-700 text-sm md:text-base">Share some details here. This is Flexible section where you can share anything you
+          want.</p>
+      </div>
+      <div class="md:px-7 px-3 border-2 border-l-orange-600 md:py-3 py-1">
+        <p class="md:my-2 my-1 text-orange-500 text-sm md:text-base">03</p>
+        <h2 class="my-1 text-lg md:text-2xl font-bold font-funky">More Freshness</h2>
+        <p class="text-gray-700 text-sm md:text-base">Share some details here. This is Flexible section where you can share anything you
+          want.</p>
+      </div>
+      <div class="md:px-7 px-3 border-2 border-l-orange-600 md:py-3 py-1">
+        <p class="md:my-2 my-1 text-orange-500 text-sm md:text-base">04</p>
+        <h2 class="my-1 text-lg md:text-2xl font-bold font-funky">Safe Payment</h2>
+        <p class="text-gray-700 text-sm md:text-base">Share some details here. This is Flexible section where you can share anything you
+          want.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="h-screen w-full flex md:flex-row flex-col">
+    <div class="img-container flex md:flex-row flex-row-reverse gap-5 justify-center md:justify-end items-end md:w-1/2 w-[95%] px-5 md:px-10 md:h-[80%] h-[45%]">
+      <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/about-01.jpg" alt=""
+        class="rounded-full rounded-b-none w-[48%] md:w-[35%] h-[58%] md:h-[70%]">
+      <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/about-02.jpg" alt=""
+        class="rounded-full rounded-b-none w-[50%] md:w-[44%]  h-[78%] md:h-[82%]">
+    </div>
+    </div>
+    <div class="md:w-1/2 w-full md:h-[90%] h-[55%] flex flex-col  justify-center items-center md:items-start md:gap-6 px-7">
+      <p class="text-xs md:text-base text-orange-600 md:font-semibold py-1 md:py-0">ABOUT FLORIST</p>
+      <h2 class="font-funky text-[2rem] md:text-left text-center md:text-5xl md:w-[90%] font-bold leading-tight">Blossoming Your Special Moments with Nature's
+        Finest</h2>
+      <p class="text-gray-600 md:text-gray-400 font-semibold text-center my-4 md:my-0 md:text-left text-sm md:text-base md:w-4/5 leading-snug  font-normalText">Welcome to Florist, where floral artistry meets
+        passion for nature's beauty. Our story is rooted in a deep love for flowers and a commitment to creating
+        unforgettable moments for our customers.</p>
+      <button class="px-7 py-1 my-3 md:py-3 bg-orange-400 font-semibold text-white text-lg rounded-lg">Read More</button>
+    </div>
+  </section>
+
+
+<!-- ADVERTISI SECTION  -->
+  <section class="min-h-screen bg-orange-50  pt-10 flex flex-col items-center font-normalText">
+    <p class=" text-orange-600 text-xs md:text-base py-4 md:py-0">NEW ARRIVAL</p>
+    <h2 class="md:text-5xl text-3xl font-funky font-bold w-4/5 md:w-[60%] text-center my-1 leading-tight">Discover the Latest Additions at
+      Your Top Choice Flower Shop</h2>
+    <p class="text-gray-700 md:text-lg w-[90%] md:w-full text-base text-center">Share some details here. This is Flexible section where you can share anything you
+      want.</p>
+    <div class="grid md:grid-cols-3 grid-cols-2 py-10 md:w-4/5 w-[90%] gap-4">
+      <a href="./product.html"><div class="card flex flex-col items-center">
+        <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/product-4-400x400.jpg"
+          alt="">
+        <p class="text-sm text-gray-500 mt-2">Flower</p>
+        <h2 class="md:text-xl text-base font-funky font-bold my-1 text-black text-center">Custom Flower Design</h2>
+        <div class="stars flex  md:my-2 my-0">
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+        </div>
+        <p class="text-gray-700 font-bold text-sm md:text-xl my-1"><span class="text-gray-400 line-through mx-2"> $149 </span> $127
+        </p>
+      </div></a>
+      <a href="./product.html"><div class="card flex flex-col items-center">
+        <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/product-2-400x400.jpg" alt="">
+         <p class="text-sm text-gray-500 mt-2">Flower</p>
+         <h2 class="md:text-xl text-base font-funky font-bold my-1 text-black text-center">Perwinkle Flower</h2>
+         <div class="stars flex  md:my-2 my-0">
+           <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+           <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+           <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+           <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+           <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+         </div>
+         <p class="text-gray-700 font-bold text-sm md:text-xl my-1"><span class="text-gray-400 line-through mx-2"> $149 </span> $127
+         </p>
+       </div></a>
+      <a href="./product.html"><div class="card flex flex-col items-center">
+        <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/product-1-400x400.jpg" alt="">
+        <p class="text-sm text-gray-500 mt-2">Flower</p>
+        <h2 class="md:text-xl text-base font-funky font-bold my-1 text-black text-center">Periwinkle Flower Bounqet</h2>
+        <div class="stars flex  md:my-2 my-0">
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+        </div>
+        <p class="text-gray-700 font-bold text-sm md:text-xl my-1"><span class="text-gray-400 line-through mx-2"> $149 </span> $127
+        </p>
+      </div></a>
+      
+      <a href="./product.html"><div class="card flex flex-col items-center">
+        <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/product-7-400x400.jpg" alt="">
+        <p class="text-sm text-gray-500 mt-2">Flower</p>
+        <h2 class="md:text-xl text-base font-funky font-bold my-1 text-black text-center">Rose Flower Bouqet</h2>
+        <div class="stars flex  md:my-2 my-0">
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+        </div>
+        <p class="text-gray-700 font-bold text-sm md:text-xl my-1"><span class="text-gray-400 line-through mx-2"> $149 </span> $127
+        </p>
+      </div></a>
+      
+      <a href="./product.html"><div class="card flex flex-col items-center">
+        <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/product-10-400x400.jpg" alt="">
+        <p class="text-sm text-gray-500 mt-2">Flower</p>
+        <h2 class="md:text-xl text-base font-funky font-bold my-1 text-black text-center">Tulip Custom Flower</h2>
+        <div class="stars flex  md:my-2 my-0">
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+        </div>
+        <p class="text-gray-700 font-bold text-sm md:text-xl my-1"><span class="text-gray-400 line-through mx-2"> $149 </span> $127
+        </p>
+      </div></a>
+      
+      <a href="./product.html">
+        <div class="card flex flex-col items-center">
+          <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/product-5-400x400.jpg" alt="">
+          <p class="text-sm text-gray-500 mt-2">Flower</p>
+          <h2 class="md:text-xl text-base font-funky font-bold my-1 text-black text-center">Tulip Flower</h2>
+          <div class="stars flex  md:my-2 my-0">
+            <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+            <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+            <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+            <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+            <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          </div>
+          <p class="text-gray-700 font-bold text-sm md:text-xl my-1"><span class="text-gray-400 line-through mx-2"> $149 </span> $127
+          </p>
+        </div>
+      </a>
+      
+    </div>
+  </section>
+
+
+  <!-- NEW ADVERTISING SECTION -->
+
+  <section class="h-screen md:h-[95vh] bg-black flex flex-col md:flex-row font-normalText mb-14">
+    <div class="img-container w-full md:w-1/2 flex items-end  justify-center md:justify-end md:px-5">
+      <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/offer.jpg" alt="" class="w-[90%] md:w-[80%] h-[90%] rounded-full rounded-b-none">
+    </div>
+    <div class="img-info flex flex-col justify-center items-center md:items-start gap-5 w-full md:w-1/2 px-5 md:px-10 pt-2 md:pt-20  ">
+      <p class="text-orange-600 text-sm md:text-lg">SPECIAL OFFER</p>
+      <h2 class="text-[2rem] md:text-5xl md:w-4/5 text-center md:text-left text-white font-bold font-funky leading-tight">Your Floral Journey Begins Here: Get 20% Off Your First Order!</h2>
+      <button class="px-7 py-1 md:py-3 bg-orange-600 font-semibold text-white text-lg rounded-lg w-fit mt-3">Shop Now</button>
+    </div>
+  </section>
+
+
+  <!-- AGAIN CARD CONATINER SECTION  -->
+
+  <section class="min-h-screen bg-orange-50  pt-10 flex flex-col items-center font-normalText">
+    <p class=" text-orange-600 text-xs md:text-base py-4 md:py-0">BEST SELLING</p>
+    <h2 class="md:text-5xl text-3xl font-funky font-bold w-4/5 md:w-[60%] text-center my-1 leading-tight">Blossom with the Best Our Top-Selling Flowers</h2>
+    <p class="text-gray-700 md:text-lg w-[90%] md:w-full text-base text-center">Share some details here. This is Flexible section where you can share anything you
+      want.</p>
+    <div class="grid md:grid-cols-3 grid-cols-2 py-10 md:w-4/5 w-[90%] gap-4">
+      <div class="card flex flex-col items-center">
+        <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/product-4-400x400.jpg"
+          alt="">
+        <p class="text-sm text-gray-500 mt-2">Flower</p>
+        <h2 class="md:text-xl text-base font-funky font-bold my-1 text-black text-center">Custom Flower Design</h2>
+        <div class="stars flex  md:my-2 my-0">
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+        </div>
+        <p class="text-gray-700 font-bold text-sm md:text-xl my-1"><span class="text-gray-400 line-through mx-2"> $149 </span> $127
+        </p>
+      </div>
+      <div class="card flex flex-col items-center">
+       <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/product-2-400x400.jpg" alt="">
+        <p class="text-sm text-gray-500 mt-2">Flower</p>
+        <h2 class="md:text-xl text-base font-funky font-bold my-1 text-black text-center">Perwinkle Flower</h2>
+        <div class="stars flex  md:my-2 my-0">
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+        </div>
+        <p class="text-gray-700 font-bold text-sm md:text-xl my-1"><span class="text-gray-400 line-through mx-2"> $149 </span> $127
+        </p>
+      </div>
+      <div class="card flex flex-col items-center">
+        <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/product-1-400x400.jpg" alt="">
+        <p class="text-sm text-gray-500 mt-2">Flower</p>
+        <h2 class="md:text-xl text-base font-funky font-bold my-1 text-black text-center">Periwinkle Flower Bounqet</h2>
+        <div class="stars flex  md:my-2 my-0">
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+        </div>
+        <p class="text-gray-700 font-bold text-sm md:text-xl my-1"><span class="text-gray-400 line-through mx-2"> $149 </span> $127
+        </p>
+      </div>
+      <div class="card flex flex-col items-center">
+        <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/product-7-400x400.jpg" alt="">
+        <p class="text-sm text-gray-500 mt-2">Flower</p>
+        <h2 class="md:text-xl text-base font-funky font-bold my-1 text-black text-center">Rose Flower Bouqet</h2>
+        <div class="stars flex  md:my-2 my-0">
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+        </div>
+        <p class="text-gray-700 font-bold text-sm md:text-xl my-1"><span class="text-gray-400 line-through mx-2"> $149 </span> $127
+        </p>
+      </div>
+      <div class="card flex flex-col items-center">
+        <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/product-10-400x400.jpg" alt="">
+        <p class="text-sm text-gray-500 mt-2">Flower</p>
+        <h2 class="md:text-xl text-base font-funky font-bold my-1 text-black text-center">Tulip Custom Flower</h2>
+        <div class="stars flex  md:my-2 my-0">
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+        </div>
+        <p class="text-gray-700 font-bold text-sm md:text-xl my-1"><span class="text-gray-400 line-through mx-2"> $149 </span> $127
+        </p>
+      </div>
+      <div class="card flex flex-col items-center">
+        <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/product-5-400x400.jpg" alt="">
+        <p class="text-sm text-gray-500 mt-2">Flower</p>
+        <h2 class="md:text-xl text-base font-funky font-bold my-1 text-black text-center">Tulip Flower</h2>
+        <div class="stars flex  md:my-2 my-0">
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+          <i class="fa-regular fa-star text-gray-700 md:text-sm text-xs"></i>
+        </div>
+        <p class="text-gray-700 font-bold text-sm md:text-xl my-1"><span class="text-gray-400 line-through mx-2"> $149 </span> $127
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- COMMENT SECTION  -->
+
+  <section class="min-h-[85vh]  flex flex-col items-center gap-4 pt-5 md:pt-20 pb-4">
+    <p class=" text-orange-600 my-2 text-xs md:text-base">TESTIMONIAL</p>
+    <h2 class="text-3xl md:text-5xl text-center font-funky md:text-start font-bold">Hear From Our Happy Customers</h2>
+    <p class="text-gray-500 font-semibold text-center md:text-left text-sm md:text-base w-4/5">Share some details here. This is Flexible section where you can share anything you want.</p>
+
+    <div class="review grid place-items-center mt-5">
+      <div class="w-[95%] md:w-4/5 grid grid-cols-1 md:grid-cols-3 gap-8 py-5">
+        <div class="review-card flex px-5 flex-col items-center">
+          <p class="flex">
+            <i class="fa-solid fa-star text-sm md:text-base text-yellow-400"></i>
+            <i class="fa-solid fa-star text-sm md:text-base text-yellow-400"></i>
+            <i class="fa-solid fa-star text-sm md:text-base text-yellow-400"></i>
+            <i class="fa-solid fa-star text-sm md:text-base text-yellow-400"></i>
+            <i class="fa-solid fa-star text-sm md:text-base text-yellow-400"></i>
+          </p>
+          <p class="text-gray-700 my-4 text-center text-sm md:text-base md:text-gray-500 md:text-left">
+            I've been a loyal customer of Florist for years, and they never cease to amaze me. The flowers are always fresh, the arrangements are stunning, and the service is top-notch.
+          </p>
+          <div class="account-info flex gap-3">
+            <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/testimonial-skip-01.jpg" alt="" class="rounded-full w-12">
+            <h2 class="flex flex-col items-center justify-center"><p class="font-bold">Ravi Singh</p>
+            <p class="text-sm text-gray-500">wedding planner</p></h2>
+          </div>
+        </div>
+        <div class="review-card flex px-5 flex-col items-center">
+          <p class="flex">
+            <i class="fa-solid fa-star text-sm md:text-base text-yellow-400"></i>
+            <i class="fa-solid fa-star text-sm md:text-base text-yellow-400"></i>
+            <i class="fa-solid fa-star text-sm md:text-base text-yellow-400"></i>
+            <i class="fa-solid fa-star text-sm md:text-base text-yellow-400"></i>
+            <i class="fa-solid fa-star text-sm md:text-base text-yellow-400"></i>
+          </p>
+          <p class="text-gray-700 my-4 text-center text-sm md:text-base md:text-gray-500 md:text-left">
+            I've been a loyal customer of Florist for years, and they never cease to amaze me. The flowers are always fresh, the arrangements are stunning, and the service is top-notch.
+          </p>
+          <div class="account-info flex gap-3">
+            <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/testimonial-skip-01-1.jpg" alt="" class="rounded-full">
+            <h2 class="flex flex-col items-center justify-center"><p class="font-bold">Robbert Jia</p>
+            <p class="text-sm text-gray-500">Designer</p></h2>
+          </div>
+        </div>
+        <div class="review-card flex px-5 flex-col items-center">
+          <p class="flex">
+            <i class="fa-solid fa-star text-sm md:text-base text-yellow-400"></i>
+            <i class="fa-solid fa-star text-sm md:text-base text-yellow-400"></i>
+            <i class="fa-solid fa-star text-sm md:text-base text-yellow-400"></i>
+            <i class="fa-solid fa-star text-sm md:text-base text-yellow-400"></i>
+            <i class="fa-solid fa-star text-sm md:text-base text-yellow-400"></i>
+          </p>
+          <p class="text-gray-700 my-4 text-center text-sm md:text-base md:text-gray-500 md:text-left">
+            I've been a loyal customer of Florist for years, and they never cease to amaze me. The flowers are always fresh, the arrangements are stunning, and the service is top-notch.
+          </p>
+          <div class="account-info flex gap-3">
+            <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/testimonial-skip-02-1.jpg" alt="" class="rounded-full">
+            <h2 class="flex flex-col items-center justify-center"><p class="font-bold">Mili Kunus</p>
+            <p class="text-sm text-gray-500">Business Owner</p></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGAIN ADVERTISING  -->
+  
+  <section class="h-screen md:h-[95vh] bg-black flex flex-col md:flex-row font-normalText mb-14">
+    <div class="img-container w-full md:w-1/2 flex items-end  justify-center md:justify-end md:px-5">
+      <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/cta.jpg" alt="" class="w-[90%] md:w-[80%] h-[90%] rounded-full rounded-b-none">
+    </div>
+    <div class="img-info flex flex-col justify-center items-center md:items-start gap-5 w-full md:w-1/2 px-5 md:px-10 pt-2 md:pt-20  ">
+      <p class="text-orange-600 text-sm md:text-lg">CALL TO ACTION</p>
+      <h2 class="text-[2rem] md:text-5xl md:w-4/5 text-center md:text-left text-white font-bold font-funky leading-tight">Explore Our Exquisite Floral Collections & Shop Now for the Perfect Blooms</h2>
+      <button class="px-7 py-1 md:py-3 bg-orange-600 font-semibold text-white text-lg rounded-lg w-fit mt-3">Shop Now</button>
+    </div>
+  </section>
+  
+  
+<!-- FOOTER SECTION  -->
+<footer class="h-fit">
+  <div class="w-[90%] md:w-4/5 h-[80%] m-auto flex flex-col md:flex-row justify-between gap-7 pb-10">
+    <div class="flex-1 text-center md:text-left">
+      <h2 class="text-2xl font-funky font-bold">Flower Shop</h2>
+      <p class="text-gray-500 my-6 text-sm md:text-base">Welcome to the world of Florist, where flowers come to life with love and creativity. Discover our story, our passion for flowers, and our commitment to making every moment memorable.</p>
+    </div>
+    <div class="flex-1 flex flex-col justify-center items-center">
+      <h2 class="text-2xl font-funky font-bold">Links</h2>
+      <ul class="flex flex-row md:flex-col gap-5 md:gap-1 my-6">
+        <a href="" class="text-gray-500">Home</a>
+        <a href="" class="text-gray-500">About</a>
+        <a href="" class="text-gray-500">Shop</a>
+        <a href="" class="text-gray-500">Conatct</a>
+      </ul>
+    </div>
+    <div class="flex-1 text-center md:text-left">
+      <h2 class="text-2xl font-funky font-bold">Contact US</h2>
+      <div class="contact-info text-gray-500 my-3 md:my-6 flex flex-col gap-2 text-sm">
+        <p>Address: 13 Fifth Avenue, New York 101660</p>
+        <p>Email: contact@info.com</p>
+        <p>Phone: +91 987 654 321</p>
+      </div>
+    </div>
+  </div>
+<div class="w-full md:w-4/5 h-full flex flex-col md:flex-row gap-3 md:gap-0 justify-center md:justify-between items-center py-4 md:py-0">
+<p class="text-gray-500">Copyright © 2024 Flower Shop</p>
+<p class="flex gap-5 md:gap-2">
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-brands fa-linkedin"></i>
+</p>
+</div>
+</footer>
+
+
+<script src="./script.js"></script>
+</body>
+
+</html>

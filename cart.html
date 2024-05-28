@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="font-normalText">
+    <nav class="flex justify-between md:justify-around items-center px-7 md:px-0 py-6 bg-black font-funky">
+        <h1 class="text-2xl text-white font-bold font-funky">LOGO</h1>
+        <ul class="hidden md:flex gap-5">
+            <a href="" class="text-lg text-white font-semibold">HOME</a>
+            <a href="" class="text-lg text-white font-semibold">ABOUT</a>
+            <a href="" class="text-lg text-white font-semibold">SHOP</a>
+            <a href="" class="text-lg text-white font-semibold">CONTACT</a>
+        </ul>
+        <button
+            class="hidden md:block px-3 py-1 border border-white text-white rounded-lg font-bold font-funky">Cart</button>
+        <div class="block md:hidden"><i class="fa-solid fa-bars text-2xl text-orange-600"></i></div>
+    </nav>
+    <main class="w-full h-fit grid place-items-center mb-44">
+        <div class="container w-[95%] md:w-4/5">
+            <h1 class="text-4xl font-bold font-funky mt-10">Carts</h1>
+            <div class="tables flex flex-col md:flex-row mt-10 gap-20 md:gap-5">
+                <table class="w-[98%] md:w-[65%] border border-gray-200 h-fit">
+                    <thead class="border border-gray-200 ">
+                        <th class="py-4 px-1 bg-orange-50 text-gray-600">Products</th>
+                        <th class="py-4 px-1 bg-orange-50 text-gray-600">Price</th>
+                        <th class="py-4 px-1 bg-orange-50 text-gray-600">Quantity</th>
+                        <th class="hidden md:block py-4 px-1 bg-orange-50 text-gray-600">Sub Total</th>
+                    </thead>
+                    <tbody class="mt-1">
+                        <tr class="py-3 px-1">
+                            <td class="flex items-center justify-center gap-2 py-2"><i class="fa-solid fa-circle-xmark text-gray-500 mr-2 md:mr-16"></i>
+                                <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/product-2-400x400.jpg"
+                                    alt="" class="h-8 md:h-16">
+                                    <span class=" text-sm md:text-base text-gray-500 font-semibold">Prewinkle Flower</span>
+                            </td>
+                            <td class="text-center text-sm md:text-base">$199.00</td>
+                            <td class="cart-quantity my-3 flex justify-center">
+                                <button class="px-2 md:px-4 py-0.5 md:py-1 border border-gray-300 text-gray-500"> - </button>
+                                <input type="text" value="1" class="px-0.5 md:px-1 py-1 border border-gray-300 w-8 md:w-11 text-center border-x-0 text-gray-500">
+                                <button class="px-2 md:px-4 py-0.5 md:py-1 border border-gray-300 text-gray-500"> + </button>
+                            </td>
+                            <td class="text-center hidden md:table-cell">$199.00</td>
+                        </tr>
+                        <tr class="py-3 px-1">
+                            <td class="flex items-center justify-center gap-2 py-2"><i class="fa-solid fa-circle-xmark text-gray-500 mr-2 md:mr-16"></i>
+                                <img src="https://websitedemos.net/flower-shop-04/wp-content/uploads/sites/1414/2023/10/product-2-400x400.jpg"
+                                    alt="" class="h-8 md:h-16">
+                                    <span class=" text-sm md:text-base text-gray-500 font-semibold">Prewinkle Flower</span>
+                            </td>
+                            <td class="text-center text-sm md:text-base">$199.00</td>
+                            <td class="cart-quantity my-3 flex justify-center">
+                                <button class="px-2 md:px-4 py-0.5 md:py-1 border border-gray-300 text-gray-500"> - </button>
+                                <input type="text" value="1" class="px-0.5 md:px-1 py-1 border border-gray-300 w-8 md:w-11 text-center border-x-0 text-gray-500">
+                                <button class="px-2 md:px-4 py-0.5 md:py-1 border border-gray-300 text-gray-500"> + </button>
+                            </td>
+                            <td class="text-center hidden md:table-cell">$199.00</td>
+                        </tr>
+                       
+                        
+                       
+                    </tbody>
+                </table>
+                <table class="w-[90%] md:w-[30%] border">
+                    <thead class="border border-gray-200">
+                        <th class="py-4 px-1 text-xl text-gray-900 bg-orange-50 text-left font-funky">Cart Total</th>
+                    </thead>
+                    <tbody class="mt-1 ">
+                        <tr class="py-2">
+                            <td class="px-5">
+                                <p class="flex justify-between py-3 px-1"><span>Subtotal</span> <span>$328.00</span></p>
+                            <hr />
+                            <p class="flex justify-between py-3 px-1"><span>Total</span> <span>$328.00</span></p>
+                            <hr />
+                            </td>
+                        </tr>
+                       <tr> <td class="px-6 py-6"> Have a coupan ?</td></tr>
+                       <tr> <td class="px-6 py-1"><button class="px-3 py-4 w-full rounded-lg bg-orange-600 text-white text-xl"> Proceed to Pay</button></td></tr>
+                    </tbody>
+                </table>
+            </div>
+           
+        </div>
+    </main>
+    <footer class="h-fit bg-orange-50 py-2">
+        <div class="w-[90%] md:w-4/5 h-[80%] m-auto flex flex-col md:flex-row justify-between gap-7 pb-10">
+          <div class="flex-1 text-center md:text-left">
+            <h2 class="text-2xl font-funky font-bold">Flower Shop</h2>
+            <p class="text-gray-500 my-6 text-sm md:text-base">Welcome to the world of Florist, where flowers come to life with love and creativity. Discover our story, our passion for flowers, and our commitment to making every moment memorable.</p>
+          </div>
+          <div class="flex-1 flex flex-col justify-center items-center">
+            <h2 class="text-2xl font-funky font-bold">Links</h2>
+            <ul class="flex flex-row md:flex-col gap-5 md:gap-1 my-6">
+              <a href="" class="text-gray-500">Home</a>
+              <a href="" class="text-gray-500">About</a>
+              <a href="" class="text-gray-500">Shop</a>
+              <a href="" class="text-gray-500">Conatct</a>
+            </ul>
+          </div>
+          <div class="flex-1 text-center md:text-left">
+            <h2 class="text-2xl font-funky font-bold">Contact US</h2>
+            <div class="contact-info text-gray-500 my-3 md:my-6 flex flex-col gap-2 text-sm">
+              <p>Address: 13 Fifth Avenue, New York 101660</p>
+              <p>Email: contact@info.com</p>
+              <p>Phone: +91 987 654 321</p>
+            </div>
+          </div>
+        </div>
+      <div class="w-full mx-auto md:w-4/5 h-full flex flex-col md:flex-row gap-3 md:gap-0 justify-center md:justify-between items-center py-4 md:py-0">
+      <p class="text-gray-500">Copyright © 2024 Flower Shop</p>
+      <p class="flex gap-5 md:gap-2">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </p>
+      </div>
+      </footer>
+
+
+</body>
+
+</html>
